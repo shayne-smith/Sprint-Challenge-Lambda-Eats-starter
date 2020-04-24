@@ -11,7 +11,7 @@ function OrderForm(props) {
     } = props
 
     return (
-        <form className='container'>
+        <form className='formContainer'>
             <h2>Pizza Order Form</h2>
             <div className='errors'>
                 <h3 data-cy_name_validation="data-cy_name_validation">{errors.name}</h3>
@@ -44,6 +44,7 @@ function OrderForm(props) {
             </select></label><br /><br />
 
             {/* ////////// CHECKBOXES ////////// */}
+            <h3>Toppings:</h3>&nbsp;
             <label><input
                 data-cy_pepperoni_checkbox="cy_pepperoni_checkbox"
                 checked={values.components.pepperoni}
@@ -55,7 +56,7 @@ function OrderForm(props) {
                 checked={values.components.mushroom}
                 onChange={onCheckboxChange}
                 name='mushroom'
-                type="checkbox" /> Mushroom</label>&nbsp;<br /><br />
+                type="checkbox" /> Mushroom</label>&nbsp;
             <label><input
                 data-cy_chicken_checkbox="cy_chicken_checkbox"
                 checked={values.components.chicken}

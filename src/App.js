@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react"
 import { Route, Switch, Link } from 'react-router-dom'
 import axios from 'axios'
 import * as yup from 'yup'
+import './App.css'
 
 import OrderForm from './OrderForm'
 import imageSrc from './Assets/Pizza.jpg'
@@ -132,8 +133,8 @@ const App = () => {
   }
 
   return (
-    <div>
-      <h1>Lambda Eats</h1>
+    <div className='appContainer'>
+      <h1>Lambda Eats</h1><br></br>
       <img src={imageSrc} />
       <Switch>
         <Route path='/pizza'>
