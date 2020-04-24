@@ -134,7 +134,10 @@ const App = () => {
 
   return (
     <div className='appContainer'>
-      <h1>Lambda Eats</h1><br></br>
+      <Link to='/'>
+        <h1>Lambda Eats</h1>
+      </Link>
+      
       <img src={imageSrc} />
       <Switch>
         <Route path='/pizza'>

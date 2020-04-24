@@ -37,9 +37,18 @@
   }
 }
 
+a {
+  text-decoration: none;
+}
+
+a h1 {
+  color: black;
+}
+
 img {
   max-width: 70%;
   margin: 2rem;
+  border-radius: 2rem;
 }
 
 .appContainer {
