@@ -44,7 +44,6 @@ describe('User Onboarding Form', () => {
         
         cy.get('[data-cy_name_validation="data-cy_name_validation"]')
             .should('not.be.empty')
-            .pause()
     })
     
 })
